@@ -30,6 +30,11 @@
             return 0;
         }
 
+        public function save($sql) {
+			$result = mysqli_query($this->conn, $sql);
+			return $result;
+		}
+
         public function str_injector($param) {
 			return mysqli_real_escape_string($this->conn, $param);
 		}

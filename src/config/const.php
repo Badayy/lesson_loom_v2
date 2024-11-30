@@ -7,4 +7,7 @@
     define('USER_ROLE_ADMIN', 1);
     define('USER_ROLE_SCHOOL', 2);
     define('USER_ROLE_TEACHER', 3);
+
+    define('ONLINE', 1);
+    define('OFFLINE', 0);
 ?>

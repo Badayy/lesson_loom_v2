@@ -83,7 +83,7 @@
 									<div class="col-lg-6 mb-5">
 										<label for="exampleFormControlInput1" class="form-label mb-2 fs-13 label-color font-w500">Role</label>
 										<select class=" default-select form-control wide" aria-label="Default select example" name="role" required>
-											<option disabled selected>Select Role</option>
+											<option disabled selected value="">Select Role</option>
 											<?php foreach($user_role['data'] as $role) :?>
 												<option value="<?= $role['id']; ?>"><?= ucfirst($role['role']); ?></option>
 											<?php endforeach; ?>
