@@ -1,3 +1,22 @@
+<?php
+	session_start();
+
+	if (!isset($_SESSION['login_data'])) {
+		header('location:index.php');
+	}
+
+	if (isset($_SESSION['invalid'])) {
+		unset($_SESSION['invalid']);
+	}
+
+	if (isset($_SESSION['login_data'])) {
+		$user_id = $_SESSION['login_data']['id'];
+		$user_role = $_SESSION['login_data']['user_role'];
+		$user_rolename = $_SESSION['login_data']['role_name'];
+		$user_fname = $_SESSION['login_data']['fname'];
+		$user_lname = $_SESSION['login_data']['lname'];
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +33,7 @@
 	<!-- Page Title Here -->
 	<title>LessonLoom</title>
 
-<!-- FAVICONS ICON -->
+	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="">
 	<link href="vendor/wow-master/css/libs/animate.css" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/fullcalendar-5.11.0/lib/main.css">
@@ -770,8 +789,8 @@
 														<img src="images/user.jpg" class="ms-0" alt="">
 													</li>
 													<li class="ms-2">
-														<h4 class="mb-0">Nella Vita</h4>
-														<span>Admin</span>
+														<h4 class="mb-0"><?= $user_fname .' '. $user_lname; ?></h4>
+														<span><?= $user_rolename; ?></span>
 													</li>
 												</ul>
 
@@ -819,7 +838,7 @@
 
 											</div>
 											<div class="card-footer text-center p-3">
-												<a href="page-login.html" class="dropdown-item ai-icon btn btn-primary light">
+												<a href="src/actions/Logout.php" class="dropdown-item ai-icon btn btn-primary light">
 													<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
 													<span class="ms-2 text-primary">Logout </span>
 												</a>

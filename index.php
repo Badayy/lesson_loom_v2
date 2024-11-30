@@ -1,4 +1,16 @@
 
+<?php
+	include_once 'src/UserController.php';
+	$user_controller = new UserController();
+	$user_role = $user_controller->user_role();
+
+	session_start();
+
+	if (isset($_SESSION['login_data'])) {
+		header('location:dashboard.php');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
@@ -21,7 +33,7 @@
 	<!-- Page Title Here -->
 	<title>LessonLoom</title>
 
-<!-- FAVICONS ICON -->
+	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png" >
 	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
@@ -52,29 +64,33 @@
 					<div class="row no-gutters">
 						<div class="col-xl-12 tab-content">
 							<div id="sign-up" class="auth-form tab-pane fade show active  form-validation">
-								<form action="index.html">
+								<form method="POST" action="src/actions/login.php">
 									<div class="text-center mb-4">
 										<h3 class="text-center mb-2 text-black">Sign In</h3>
 									</div>
+									<?php if (isset($_SESSION['invalid']) && $_SESSION['invalid']) : ?>
+										<div class="alert alert-danger">Invalid Account</div>
+									<?php endif; ?>
+
 									<div class="mb-3">
 										<label for="exampleFormControlInput1" class="form-label mb-2 fs-13 label-color font-w500">Email</label>
-									  <input type="email" name="email" class="form-control" id="exampleFormControlInput1">
+									  	<input type="email" name="email" class="form-control" id="exampleFormControlInput1" required/>
 									</div>
 									<div class="mb-3">
 										<label for="exampleFormControlInput1" class="form-label mb-2 fs-13 label-color font-w500">Password</label>
-									  <input type="password" name="password" class="form-control" id="exampleFormControlInput2">
+									  	<input type="password" name="password" class="form-control" id="exampleFormControlInput2" required/>
 									</div>
 									<div class="col-lg-6 mb-5">
 										<label for="exampleFormControlInput1" class="form-label mb-2 fs-13 label-color font-w500">Role</label>
-										<select class=" default-select form-control wide" aria-label="Default select example">
+										<select class=" default-select form-control wide" aria-label="Default select example" name="role" required>
 											<option disabled selected>Select Role</option>
-											<option value="admin">Admin</option>
-											<option value="school">School</option>
-											<option value="teacher">Teacher</option>
+											<?php foreach($user_role['data'] as $role) :?>
+												<option value="<?= $role['id']; ?>"><?= ucfirst($role['role']); ?></option>
+											<?php endforeach; ?>
 										</select>
 									</div>
 									<a href="forgot-pass.php" class="text-primary float-end mb-4" style="margin-top: -80px">Forgot Password ?</a>
-									<button class="btn btn-block btn-primary">Sign In</button>
+									<button class="btn btn-block btn-primary" type="submit" name="login">Sign In</button>
 								</form>
 								<div class="new-account mt-3 text-center">
 									<p class="font-w500">Don't have an account? <a class="text-primary" href="register.php" data-toggle="tab">Sign Up</a></p>
