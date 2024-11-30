@@ -46,16 +46,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   `school_id` varchar(50) DEFAULT NULL,
   `school_name` varchar(50) DEFAULT NULL,
   `school_acronym` varchar(50) DEFAULT NULL,
-  `status` tinyint(4) DEFAULT 1 COMMENT '0: inactive, 1:active',
+  `last_active_date` datetime DEFAULT NULL,
+  `is_online_flg` tinyint(4) NOT NULL DEFAULT 0 COMMENT '0: offline 1:online',
+  `status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0: inactive, 1:active',
   `created` datetime DEFAULT current_timestamp(),
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table db_lesson_loom.users: ~2 rows (approximately)
-REPLACE INTO `users` (`id`, `user_role`, `email`, `password`, `fname`, `lname`, `gender`, `birthdate`, `phone`, `address`, `school_id`, `school_name`, `school_acronym`, `status`, `created`) VALUES
-	(1, 1, 'admin@gmail.com', 'YWRtaW4=', 'Lesson', 'Loom', NULL, NULL, NULL, NULL, '0001', 'Cordova Public College', 'CPC', 1, '2024-12-01 00:45:54'),
-	(2, 2, 'renz@gmail.com', 'YWRtaW4=', 'Renz', 'Escabase', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2024-12-01 01:51:57');
+REPLACE INTO `users` (`id`, `user_role`, `email`, `password`, `fname`, `lname`, `gender`, `birthdate`, `phone`, `address`, `school_id`, `school_name`, `school_acronym`, `last_active_date`, `is_online_flg`, `status`, `created`) VALUES
+	(1, 1, 'admin@gmail.com', 'YWRtaW4=', 'Lesson', 'Loom', NULL, NULL, NULL, NULL, '0001', 'Cordova Public College', 'CPC', '2024-12-01 02:27:10', 0, 1, '2024-12-01 00:45:54'),
+	(2, 2, 'renz@gmail.com', 'YWRtaW4=', 'Renz', 'Escabase', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, '2024-12-01 01:51:57');
 
 -- Dumping structure for table db_lesson_loom.user_role
 CREATE TABLE IF NOT EXISTS `user_role` (
