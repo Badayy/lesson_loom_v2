@@ -14,7 +14,7 @@
 							<div class="col-xl-12">
 								<div class="page-title flex-wrap">
                                     <div>
-										<h4>Daily Lesson Plan Template</h4>
+										<h4>Daily Lesson Plan Templates</h4>
 									</div>
 								</div>
 							</div>
@@ -45,7 +45,7 @@
                             <div class="col-xl-12">
 								<div class="page-title flex-wrap">
                                     <div>
-										<h4>Weekly Lesson Plan Template</h4>
+										<h4>Weekly Lesson Plan Templates</h4>
 									</div>
 								</div>
 							</div>
@@ -76,7 +76,7 @@
                             <div class="col-xl-12">
 								<div class="page-title flex-wrap">
                                     <div>
-										<h4>Monthly Lesson Plan Template</h4>
+										<h4>Monthly Lesson Plan Templates</h4>
 									</div>
 								</div>
 							</div>
