@@ -942,6 +942,12 @@
                             
                         </ul>
 					</li>
+					<li>
+                        <a class=" " href="chat.php" aria-expanded="false">
+							<i class="material-symbols-outlined">chat</i>
+							<span class="nav-text">Chat</span>
+						</a>
+					</li>
 				
 				</ul>
 			</div>
