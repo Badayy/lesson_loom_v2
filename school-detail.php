@@ -42,7 +42,7 @@
 											</svg>
 										</div>
 										<div class="dropdown-menu dropdown-menu-end">
-											<a class="dropdown-item" href="edit-profiles.php">Edit</a>
+											<a class="dropdown-item" href="school-edit-profile.php">Edit</a>
 											<a class="dropdown-item">Deactivate</a>
 										</div>
 									</div>

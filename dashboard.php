@@ -182,7 +182,7 @@
 													<span class="text-primary font-w600">02</span>
 												</td>
 												<td>
-													<span class="text-primary font-w600">Cordova Elementary</span>
+													<span class="text-primary font-w600">Cams Elementary</span>
 												</td>
 												<td>
 													<span class="text-primary font-w600">20213</span>

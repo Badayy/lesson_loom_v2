@@ -49,7 +49,7 @@
 					<img src="images/logo-white.png" alt="">
 				</div>
 				<h3 class="mb-2 text-white">Welcome back!</h3>
-				<p class="mb-4">Your lesson planning journey continues. <br>Log in to start where you left off.</p>
+				<p class="mb-4">Your lesson planning journey continues, <br>Log in to start where you left off.</p>
 			</div>
 			<div class="aside-image position-relative" style="background-image:url(images/background/pic-2.png);">
 				<img class="img1 move-1" src="images/background/pic3.png" alt="">

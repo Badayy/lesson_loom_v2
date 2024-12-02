@@ -906,6 +906,18 @@
                         </ul>
 					</li>
 					<li>
+                        <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+                            <i class="material-symbols-outlined">notes</i>
+                            <span class="nav-text">Template</span>
+					    </a>
+                        <ul aria-expanded="false">
+                            <li><a href="add-template.php">Add Templates</a></li>
+                            <li><a href="view-template.php">View Templates</a></li>
+                            <!-- <li><a href="add-teacher.php">Add New Teacher</a></li> -->
+                            
+                        </ul>
+					</li>
+					<li>
                         <a class=" " href="class.php" aria-expanded="false">
 							<i class="material-symbols-outlined">book</i>
 							<span class="nav-text">Class</span>
@@ -930,24 +942,8 @@
                             
                         </ul>
 					</li>
-					<li>
-                        <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-                            <i class="material-symbols-outlined">notes</i>
-                            <span class="nav-text">Template</span>
-					    </a>
-                        <ul aria-expanded="false">
-                            <li><a href="add-template.php">Add Template</a></li>
-                            <li><a href="view-template.php">View Template</a></li>
-                            <!-- <li><a href="add-teacher.php">Add New Teacher</a></li> -->
-                            
-                        </ul>
-					</li>
 				
 				</ul>
-				<!-- <div class="copyright justify-content-end">
-					<p><strong>School Admission Dashboard</strong></p>
-					<p class="fs-12">Made with <span class="heart"></span> by DexignLab</p>
-				</div> -->
 			</div>
         </div>
         <!--**********************************
