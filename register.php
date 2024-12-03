@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
+
 <head>
-    	
-   <meta charset="utf-8">
+   <!-- All Meta -->
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="author" content="DexignLab" >
 	<meta name="robots" content="" >
+	<meta name="keywords" content="school, school admin, education, academy, admin dashboard, college, college management, education management, institute, school management, school management system, student management, teacher management, university, university management" >
+	<meta name="description" content="Discover Akademi - the ultimate admin dashboard and Bootstrap 5 template. Specially designed for professionals, and for business. Akademi provides advanced features and an easy-to-use interface for creating a top-quality website with School and Education Dashboard" >
+	<meta property="og:title" content="Akademi : School and Education Management Admin Dashboard Template" >
+	<meta property="og:description" content="Akademi - the ultimate admin dashboard and Bootstrap 5 template. Specially designed for professionals, and for business. Akademi provides advanced features and an easy-to-use interface for creating a top-quality website with School and Education Dashboard">
+	<meta property="og:image" content="https://akademi.dexignlab.com/xhtml/social-image.png" >
 	<meta name="format-detection" content="telephone=no">
 
 	<!-- Mobile Specific -->
@@ -14,7 +20,7 @@
 	<!-- Page Title Here -->
 	<title>LessonLoom</title>
 
-<!-- FAVICONS ICON -->
+	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="images/logo/logo.png" >
 	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
@@ -61,49 +67,49 @@
 							<div class="col-lg-6 mb-2">
 								<div class="mb-3">
 									<label class="text-label form-label">School ID<span class="required">*</span></label>
-									<input type="text" name="schoolid" class="form-control" placeholder="0000" required>
+									<input type="text" id="school_id" name="school_id" class="form-control" placeholder="0000" required>
 								</div>
 							</div>
 							<div class="col-lg-6 mb-2">
 								<div class="mb-3">
 									<label class="text-label form-label">School Name<span class="required">*</span></label>
-									<input type="text" name="schoolname" class="form-control" placeholder="Montana" required>
+									<input type="text" id="school_name" name="school_name" class="form-control" placeholder="Enter School Name" required>
 								</div>
 							</div>
 							<div class="col-lg-6 mb-2">
 								<div class="mb-3">
 									<label class="text-label form-label">School Acronym<span class="required">*</span></label>
-									<input type="text" name="schoolacronym" class="form-control" id="inputGroupPrepend45" aria-describedby="inputGroupPrepend45" placeholder="Enter School Acronym" required>
+									<input type="text" id="school_acronym" name="school_acronym" class="form-control" placeholder="Enter School Acronym" required>
 								</div>
 							</div>
 							<div class="col-lg-6 mb-2">
 								<div class="mb-3">
 									<label class="text-label form-label">School Email Address<span class="required">*</span></label>
-									<input type="email" name="email" class="form-control" id="inputGroupPrepend2" aria-describedby="inputGroupPrepend2" placeholder="example@example.com.com" required>
+									<input type="email" id="email" name="email" class="form-control" id="inputGroupPrepend2" placeholder="Enter Email Address" required>
 								</div>
 							</div>
 							<div class="col-lg-6 mb-2">
 								<div class="mb-3">
 									<label class="text-label form-label">School Phone Number<span class="required">*</span></label>
-									<input type="number" name="phone" class="form-control" placeholder="(+1)408-657-9007" required>
+									<input type="number" id="phone" name="phone" class="form-control" placeholder="Enter Phone Number" required>
 								</div>
 							</div>
 							<div class="col-lg-6 mb-2">
 								<div class="mb-3">
 									<label class="text-label form-label">School Address<span class="required">*</span></label>
-									<input type="text" name="schooladdress" class="form-control" placeholder="Montana" required>
+									<input type="text" id="address" name="address" class="form-control" placeholder="Enter School Address" required>
 								</div>
 							</div>
 							<div class="col-lg-6 mb-2">
 								<div class="mb-3">
 									<label class="text-label form-label">Password<span class="required">*</span></label>
-									<input type="password" name="password" class="form-control" id="inputGroupPrepend45" aria-describedby="inputGroupPrepend45" placeholder="Enter your Passward" required>
+									<input type="password" id="password" name="password" class="form-control" placeholder="Enter your Password" required>
 								</div>
 							</div>
 							<div class="col-lg-6 mb-2">
 								<div class="mb-3">
 									<label class="text-label form-label">Confirm Password<span class="required">*</span></label>
-									<input type="password" name="password" class="form-control" id="inputGroupPrepend45" aria-describedby="inputGroupPrepend45" placeholder="Enter your Passward" required>
+									<input type="password" id="confirmpassword" name="confirmpassword" class="form-control" placeholder="Confirm your Passward" required>
 								</div>
 							</div>
 							<div class="col-lg-12 mb-3">
@@ -120,7 +126,7 @@
 						</div>
 					</form>
 					<div class="new-account mt-3 text-center">
-						<p class="font-w500">Already have an account? <a class="text-primary" href="login.php">Sign in</a></p>
+						<p class="font-w500">Already have an account? <a class="text-primary" href="index.php">Sign in</a></p>
 					</div>
 				</div>
 			</div>
@@ -134,7 +140,7 @@
     ***********************************-->
 	
 
-	  <!-- Required vendors -->
+	<!-- Required vendors -->
 	  <script src="vendor/global/global.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>	
     <script src="vendor/jquery-steps/build/jquery.steps.min.js"></script>
@@ -152,7 +158,6 @@
 	<script src="js/custom.min.js"></script>
 	<script src="js/dlabnav-init.js"></script>
 	<script src="js/demo.js"></script>
-    <script src="js/styleSwitcher.js"></script>
 	<script>
 		$(document).ready(function(){
 			// SmartWizard initialize

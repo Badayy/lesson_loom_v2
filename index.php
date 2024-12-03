@@ -73,15 +73,15 @@
 									<?php endif; ?>
 
 									<div class="mb-3">
-										<label for="exampleFormControlInput1" class="form-label mb-2 fs-13 label-color font-w500">Email</label>
-									  	<input type="email" name="email" class="form-control" id="exampleFormControlInput1" required/>
+										<label for="email" class="form-label mb-2 fs-13 label-color font-w500">Email</label>
+									  	<input type="email" name="email" class="form-control" id="email" required/>
 									</div>
 									<div class="mb-3">
-										<label for="exampleFormControlInput1" class="form-label mb-2 fs-13 label-color font-w500">Password</label>
-									  	<input type="password" name="password" class="form-control" id="exampleFormControlInput2" required/>
+										<label for="password" class="form-label mb-2 fs-13 label-color font-w500">Password</label>
+									  	<input type="password" name="password" class="form-control" id="password" required/>
 									</div>
 									<div class="col-lg-6 mb-5">
-										<label for="exampleFormControlInput1" class="form-label mb-2 fs-13 label-color font-w500">Role</label>
+										<label for="role" class="form-label mb-2 fs-13 label-color font-w500">Role</label>
 										<select class=" default-select form-control wide" aria-label="Default select example" name="role" required>
 											<option disabled selected value="">Select Role</option>
 											<?php foreach($user_role['data'] as $role) :?>
@@ -89,7 +89,9 @@
 											<?php endforeach; ?>
 										</select>
 									</div>
-									<a href="forgot-pass.php" class="text-primary float-end mb-4" style="margin-top: -80px">Forgot Password ?</a>
+									<div class="col-lg-6 ms-auto">
+										<a href="forgot-pass.php" class="text-primary float-end mb-4" style="margin-top: -80px">Forgot Password ?</a>
+									</div>
 									<button class="btn btn-block btn-primary" type="submit" name="login">Sign In</button>
 								</form>
 								<div class="new-account mt-3 text-center">

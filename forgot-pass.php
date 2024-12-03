@@ -53,7 +53,7 @@
 		<div class="container flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto">
 			<div class="d-flex justify-content-center h-100 align-items-center">
 				<div id="sign-up" class="auth-form tab-pane fade show active  form-validation">
-					<form action="index.html" >
+					<form action="" >
 						<div class="text-center mb-4">
 							<h3 class="text-center mb-2 text-black">Forgot Password?</h3>
 						</div>
@@ -82,7 +82,7 @@
 						</div>
 					</form>
 					<div class="new-account mt-3 text-center">
-						<p class="font-w500"> <i class="fa-solid fa-arrow-left"></i> <a class="text-primary" href="login.php">Return to login</a></p>
+						<p class="font-w500"> <i class="fa-solid fa-arrow-left"></i> <a class="text-primary" href="index.php">Return to login</a></p>
 					</div>
 				</div>
 			</div>
@@ -115,12 +115,6 @@
 	<script src="js/dlabnav-init.js"></script>
 	<script src="js/demo.js"></script>
     <script src="js/styleSwitcher.js"></script>
-	<script>
-		$(document).ready(function(){
-			// SmartWizard initialize
-			$('#smartwizard').smartWizard(); 
-		});
-	</script>
 	
 </body>
 </html>
