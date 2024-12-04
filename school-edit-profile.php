@@ -1,4 +1,7 @@
 <?php include_once __DIR__ ."/header.php"; ?>
+	<!--**********************************
+            Content body start
+        ***********************************-->
 	<div class="content-body">
 		<div class="container-fluid">
 			<!-- row -->
@@ -47,15 +50,15 @@
 								<div class="row">
 									<div class="col-sm-6 m-b30">
 										<label class="form-label">School Name</label>
-										<input type="text" class="form-control" value="Cordova Public College" name="schoolname">
+										<input type="text" class="form-control" value="Cordova Public College" name="school_name">
 									</div>
 									<div class="col-sm-6 m-b30">
 										<label class="form-label">School ID</label>
-										<input type="text" class="form-control" value="2024" name="schoolid">
+										<input type="text" class="form-control" value="2024" name="school_id">
 									</div>
 									<div class="col-sm-6 m-b30">
 										<label class="form-label">School Acronym</label>
-										<input type="text" class="form-control" name="schoolacronym" value="CPC">
+										<input type="text" class="form-control" name="school_acronym" value="CPC">
 									</div>
 									<div class="col-sm-6 m-b30">
 										<label class="form-label">Phone</label>
@@ -72,33 +75,16 @@
 								</div>
 							</div>
 							<div class="card-footer">
-								<button type="submit" class="btn btn-primary btn-lg float-end mt-5">UPDATE</button>
+								<button type="submit" class="btn btn-primary btn-lg float-end mt-5 mb-5">UPDATE</button>
 							</div>
 						</form>
 					</div>
-				</div>
-				
+				</div>				
 			</div>	
-
 		</div>
 	</div>
-        <!--**********************************
-            Content body end
-        ***********************************-->
-		
-        <!--**********************************
-           Support ticket button start
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button end
-        ***********************************-->
-
-        
-    </div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
+	<!--**********************************
+		Content body end
+	***********************************-->
 	
-	<!--removeIf(production)-->
 <?php include_once __DIR__ ."/footer.php"; ?>

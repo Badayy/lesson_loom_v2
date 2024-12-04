@@ -141,20 +141,18 @@
 	
 
 	<!-- Required vendors -->
-	  <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/global/global.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>	
     <script src="vendor/jquery-steps/build/jquery.steps.min.js"></script>
     <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+
     <!-- Form validate init -->
     <script src="js/plugins-init/jquery.validate-init.js"></script>
-
 
 	<!-- Form Steps -->
 	<script src="vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js"></script>
 	<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
-	
-	 <script src="vendor/dropzone/dist/dropzone.js"></script>
-	
+	<script src="vendor/dropzone/dist/dropzone.js"></script>
 	<script src="js/custom.min.js"></script>
 	<script src="js/dlabnav-init.js"></script>
 	<script src="js/demo.js"></script>

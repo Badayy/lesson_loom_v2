@@ -814,7 +814,6 @@
                         <ul aria-expanded="false">
                             <li><a href="teacher.php">Teacher</a></li>
                             <li><a href="teacher-detail.php">Teacher Detail</a></li>
-                            <!-- <li><a href="add-teacher.php">Add New Teacher</a></li> -->
                             
                         </ul>
 					</li>
@@ -826,7 +825,6 @@
                         <ul aria-expanded="false">
                             <li><a href="list-school.php">List of School</a></li>
                             <li><a href="school-detail.php">School Detail</a></li>
-                            <!-- <li><a href="add-teacher.php">Add New Teacher</a></li> -->
                             
                         </ul>
 					</li>
@@ -838,7 +836,6 @@
                         <ul aria-expanded="false">
                             <li><a href="add-template.php">Add Templates</a></li>
                             <li><a href="view-template.php">View Templates</a></li>
-                            <!-- <li><a href="add-teacher.php">Add New Teacher</a></li> -->
                             
                         </ul>
 					</li>
@@ -863,7 +860,6 @@
                             <li><a href="archive-class.php">Archive Class</a></li>
                             <li><a href="archive-teacher.php">Archive Teacher</a></li>
 							<li><a href="history-lessonplan.php">Lesson Plan</a></li>
-                            <!-- <li><a href="add-teacher.php">Add New Teacher</a></li> -->
                             
                         </ul>
 					</li>

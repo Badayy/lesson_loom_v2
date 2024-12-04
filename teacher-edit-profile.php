@@ -1,89 +1,91 @@
 <?php include_once __DIR__ . '/header.php'; ?>
 		
-		<!--**********************************
-            Content body start
-        ***********************************-->
-        <div class="content-body">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="card">
-							<div class="card-header">
-								<h5 class="mb-0">Teacher Details</h5>
-							</div>
-							<div class="card-body">
-								<div class="row">
-									<div class="col-sm-3">
-										<label class="form-label text-primary">Photo<span class="required">*</span></label>
-										 <div class="avatar-upload">
-											<div class="avatar-preview">
-												<div id="imagePreview" style="background-image: url(images/avatar/1.jpg); width: 16rem; height:16rem;"> 			
+	<!--**********************************
+		Content body start
+	***********************************-->
+	<div class="content-body">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="card">
+						<div class="card-header">
+							<h5 class="mb-0">Teacher Details</h5>
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-3">
+									<label class="form-label text-primary">Photo<span class="required">*</span></label>
+										<div class="avatar-upload">
+										<div class="avatar-preview">
+											<div id="imagePreview" style="background-image: url(images/avatar/1.jpg); width: 16rem; height:16rem;"> 			
+											</div>
+										</div>
+										<div class="change-btn mt-2 mb-lg-0 mb-3">
+											<input type='file' class="form-control d-none"  id="imageUpload" accept=".png, .jpg, .jpeg">
+											<label for="imageUpload" class="dlab-upload mb-0 btn btn-primary btn-sm">Choose File</label>
+											<a href="javascript:void" class="btn btn-danger light remove-img ms-2 btn-sm">Remove</a>
+										</div>
+									</div>	
+								</div>
+								<div class="col-sm-9">
+									<div class="row">
+										<div class="col-xl-4 col-sm-4">
+											<div class="mb-3">
+												<label for="exampleFormControlInput1" class="form-label text-primary">First Name<span class="required">*</span></label>
+												<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="James" name="firstname">
+											</div>
+										</div>
+										<div class="col-xl-4 col-sm-4">
+											<div class="mb-3">
+												<label for="exampleFormControlInput1" class="form-label text-primary">Last Name<span class="required">*</span></label>
+												<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="James" name="lastname">
+											</div>
+										</div>
+										<div class="col-xl-4 col-sm-6">
+											<div class="mb-3">
+												<label for="exampleFormControlInput1" class="form-label text-primary">Gender<span class="required">*</span></label>
+													<select class="default-select form-control" aria-label="Default select example" id="exampleFormControlInput1">
+														<option disabled selected>Select</option>
+														<option value="male">Male</option>
+														<option value="female">Female</option>
+													</select>
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="mb-3">
+												<label for="exampleFormControlInput1" class="form-label text-primary">Birthday<span class="required">*</span></label>
+												<input type="date" class="form-control" id="exampleFormControlInput1" placeholder="" name="birthday">
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="mb-3">
+												<label for="exampleFormControlInput1" class="form-label text-primary">Email<span class="required">*</span></label>
+												<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@.com" name="email">
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="mb-3">
+												<label for="exampleFormControlInput1" class="form-label text-primary">Address<span class="required">*</span></label>
+												<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address" name="address">
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="mb-3">
+												<label for="exampleFormControlInput1" class="form-label text-primary">Contact<span class="required">*</span></label>
+												<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="091237444" name="phone">
+											</div>
+										</div>
+										<div class="col-lg-12 mb-3 mt-3">
+											<label class="text-label form-label">Upload the front and back of any form of ID, such as a National ID, Passport ID, Teachers ID, and etc.<span class="required">*</span></label>
+											<div action="#" class="dropzone">
+												<div class="fallback">
+													<input name="file" type="file" multiple >
 												</div>
 											</div>
-											<div class="change-btn mt-2 mb-lg-0 mb-3">
-												<input type='file' class="form-control d-none"  id="imageUpload" accept=".png, .jpg, .jpeg">
-												<label for="imageUpload" class="dlab-upload mb-0 btn btn-primary btn-sm">Choose File</label>
-												<a href="javascript:void" class="btn btn-danger light remove-img ms-2 btn-sm">Remove</a>
-											</div>
-										</div>	
-									</div>
-									<div class="col-sm-9">
-										<div class="row">
-											<div class="col-xl-4 col-sm-4">
-												<div class="mb-3">
-												  <label for="exampleFormControlInput1" class="form-label text-primary">First Name<span class="required">*</span></label>
-												  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="James" name="firstname">
-												</div>
-											</div>
-											<div class="col-xl-4 col-sm-4">
-												<div class="mb-3">
-												  <label for="exampleFormControlInput1" class="form-label text-primary">Last Name<span class="required">*</span></label>
-												  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="James" name="lastname">
-												</div>
-											</div>
-											<div class="col-xl-4 col-sm-4">
-												<div class="mb-3">
-												  <label for="exampleFormControlInput1" class="form-label text-primary">Gender<span class="required">*</span></label>
-												  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Male" name="gender">
-												</div>
-											</div>
-											<div class="col-xl-6 col-sm-6">
-												<div class="mb-3">
-												  <label for="exampleFormControlInput1" class="form-label text-primary">Birthday<span class="required">*</span></label>
-												  <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="" name="birthday">
-												</div>
-											</div>
-											<div class="col-xl-6 col-sm-6">
-												<div class="mb-3">
-												  <label for="exampleFormControlInput1" class="form-label text-primary">Email<span class="required">*</span></label>
-												  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@.com" name="email">
-												</div>
-											</div>
-											<div class="col-xl-6 col-sm-6">
-												<div class="mb-3">
-												  <label for="exampleFormControlInput1" class="form-label text-primary">Address<span class="required">*</span></label>
-												  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address" name="address">
-												</div>
-											</div>
-											<div class="col-xl-6 col-sm-6">
-												<div class="mb-3">
-												  <label for="exampleFormControlInput1" class="form-label text-primary">Contact<span class="required">*</span></label>
-												  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="091237444" name="phone">
-												</div>
-											</div>
-											
-											<div class="col-lg-12 mb-3 mt-3">
-												<label class="text-label form-label">Upload the front and back of any form of ID, such as a National ID, Passport ID, Teachers ID, and etc.<span class="required">*</span></label>
-												<div action="#" class="dropzone">
-													<div class="fallback">
-														<input name="file" type="file" multiple >
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-12 col-sm-12 mt-5">
-												<div class="mb-3">
-													<button class="btn btn-primary btn-sm float-end me-3" type="button">Save</button>
-												</div>
+										</div>
+										<div class="col-xl-12 col-sm-12 mt-5">
+											<div class="mb-3">
+												<button class="btn btn-primary btn-sm float-end me-3" type="button">Save</button>
 											</div>
 										</div>
 									</div>
@@ -94,21 +96,16 @@
 				</div>
 			</div>
 		</div>
-		
-        <!--**********************************
-            Content body end
-        ***********************************-->
-
-		<div class="footer out-footer style-2">
-			<div class="copyright">
-				<p>Copyright © Designed &amp; Developed by <a href="" target="_blank">LessonLoom</a> 2024</p>
-			</div>
-		</div>
-
 	</div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
+	<!--**********************************
+		Content body end
+	***********************************-->
+
+	<div class="footer out-footer style-2">
+		<div class="copyright">
+			<p>Copyright © Designed &amp; Developed by <a href="" target="_blank">LessonLoom</a> 2024</p>
+		</div>
+	</div>
 
     <!--**********************************
         Scripts

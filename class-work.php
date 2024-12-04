@@ -1,27 +1,21 @@
 <?php include_once __DIR__ . '/header.php'; ?>
 		
-        <!--**********************************
-            Content body start
-        ***********************************-->
-        <div class="content-body">
-			
-            <!-- container starts -->
-            <div class="container-fluid">
-				
-                <!-- row -->
-				<div class="">
-					<div class="demo-view">
-						
-					<!-- Column starts -->
+    <!--**********************************
+        Content body start
+    ***********************************-->
+    <div class="content-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="demo-view">
                     <div class="col-xl-12">
                         <div class="card" id="accordion-four">
                             <div class="card-header flex-wrap d-flex justify-content-between px-3">
-								<div>
-									<h4 class="card-title">Class Work Title Here</h4>
-									<p class="m-0 subtitle">List of Teachers</p>
-								</div>	
-							</div>
-                           
+                                <div>
+                                    <h4 class="card-title">Class Work Title Here</h4>
+                                    <p class="m-0 subtitle">List of Teachers</p>
+                                </div>	
+                            </div>
+                            
                             <!-- /tab-content -->	
                             <div class="tab-content" id="myTabContent-3">
                                 <div class="tab-pane fade show active" id="withoutBorder" role="tabpanel" aria-labelledby="home-tab-3">
@@ -135,34 +129,16 @@
                                     </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <!-- /tab-content -->	
-                            
                         </div>
                     </div>
-                    <!-- Column ends -->
-					
-				</div>
-			</div>			
-        </div>
-        <!--**********************************
-            Content body end
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button start
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button end
-        ***********************************-->
-
-        
+                </div>                
+            </div>
+        </div>			
     </div>
     <!--**********************************
-        Main wrapper end
+        Content body end
     ***********************************-->
+    
 
 	<!-- code-highlight -->
 	<script src="./js/highlight.min.js"></script>
